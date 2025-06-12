@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Student Description
+echo ""
+echo "Student Details"
+echo "--------------"
+echo " My Name is Sujit Kumar Yadav with Student ID 200584339 with Linux Automation assignment1 for generating system report!!!"
+
 # Print a blank line at the beginning for clean output
 echo ""
 
@@ -33,7 +39,6 @@ VIDEO=$(lshw -C display 2>/dev/null | grep product | awk -F: '{print $2}' | xarg
 
 # Get the IP address used to connect to the default gateway
 HOST_IP=$(hostname -I | awk '{print $1}') 
-
 
 # Get the default gateway IP address
 GATEWAY=$(ip route | grep default | awk '{print $3}')
